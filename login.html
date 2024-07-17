@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="guru2.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="icon" href="images/1280x1024-educational-institution_4x.png" />
+    </head>
+    <body>
+        <div class="back-btn">
+            <button onclick="history.back()"><img src="images/left.png" id="left-nav"></button>
+        </div>
+        <div class="login-container">
+            <div class="login">
+                <div class="login-img">
+                    <img src="images/1280x1024-educational-institution_4x.png" alt="" />
+                </div>
+                <h1>Login To Your Account</h1>
+                <form action="home.html">
+
+
+                    <div class="login-user">
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="Enter Your Username"
+                            maxlength="8"
+                            id="user"
+                        />
+                    </div>
+
+                    <div class="login-pw">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Enter your Password"
+                            maxlength="8"
+                            id="pw"
+                        />
+                    </div>
+
+                    <div class="login-sub">
+                        <input type="submit" class="newb" />
+                    </div>
+
+
+                </form>
+                
+                <p>Don't have a account yet?
+                <span><a href="signup.html">&nbspSign Up</a></span></p>
+            </div>
+        </div>
+    </body>
+</html>

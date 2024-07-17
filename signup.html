@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="guru2.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="icon" href="images/1280x1024-educational-institution_4x.png" />
+    </head>
+    <body>
+
+        <div class="back-btn">
+            <button onclick="history.back()"><img src="images/left.png" id="left-nav"></button>
+        </div>
+
+        <div class="signup-container">
+            <div class="signup">
+
+                <div class="signup-img">
+                    <img src="images/1280x1024-educational-institution_4x.png" alt="" />
+                </div>
+
+                <h1>Create A New Account</h1>
+
+                <form action="home.html">
+                    <div class="names">
+                        <input
+                            type="text"
+                            name="fistname"
+                            placeholder="First Name"
+                            maxlength="8"
+                            id="first-Name"
+                        />
+                        <input
+                            type="text"
+                            name="text"
+                            placeholder="Last Name"
+                            id="last-Name"
+                        />
+                    </div>
+                    <div class="id-birthday">
+                        <input
+                           type="text"
+                           name="id-number"
+                           minlength="9"
+                           maxlength="12"
+                           placeholder="National Id Number"
+                           id="id-number"
+                        />
+
+                        <input
+                            type="date"
+                            name="birthday"
+                            placeholder="birthday"
+                            id="birthday"
+                        />
+                    </div>    
+                    <div class="contact">
+                        <input
+                        type="text"
+                        name="contact-number"
+                        minlength="9"
+                        maxlength="10"
+                        placeholder="Contact Number"
+                        id="contact-number"
+                     />
+
+                        <select name="Gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>               
+                        <select name="school" id="school">
+                            <option value="KCC" selected>ST/Mary's College - Mathugama</option>
+                            <option value="ASM">Ananda Sasthralaya - Mathugama</option>
+                            <option value="St.marys">C.W.W. Kannangara Central College - Mathugama</option>
+                            <option value="KNV">National College - Kalutara</option>
+                            <option value="HCKalutara">Holy Cross College - Kalutara </option>
+                            <option value="HCpayagala">Holy Cross College - Payagala</option>
+                            <option value="panadurabalika">Balika College - Panadura</option>
+                            <option value="kalutarabalika">Balika College - Kalutara</option>
+                            <option value="horanathakshila">Thakshila Central College - Horana</option>
+                            <option value="other">Other</option>
+                        </select>
+
+
+                    <div class="signup-sub">
+                        <input type="submit" class="newb2" value="Create" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,221 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="guru2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/1280x1024-educational-institution_4x.png">    
+    
+</head>
+<body>
+    
+    <div class="navbar">
+		
+        <img src="images/1280x1024-educational-institution_4x.png" class="logo">
+        <ul>
+            <li><a href="home.html">HOME        </a></li>
+            <li><a href="courses.html">courses       </a></li>
+        </UL>
+
+        <a class="button2" href="login.html">LOGIN</a>
+        
+    </div>
+
+    <div class="back-btn">
+        <button onclick="history.back()"><img src="images/left.png" id="left-nav"></button>
+    </div>
+
+        <div class="contact-area">
+
+            <div class="contact-heading">
+                <h2>contact Us</h2>
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-form">
+
+                    <div class="login2">
+                        <h1>Send a E-mail</h1>
+                        <form action="guru2.html">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Enter Your Full name"
+                                maxlength="8"
+                                id="user2"
+                            />
+                            <input
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                placeholder="Enter Your Email Address"
+                            />
+                            <select name="user-type" id="user-type">
+                                <option value="Student-r">Student (Registered)</option>
+                                <option value="student-nonr">Student (Non Registered)</option>
+                                <option value="parent">Parent</option>
+                                <option value="teacher">Teacher</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input
+                                type="text"
+                                name="Compose"
+                                placeholder="Compose Your Email Address"
+                                id="contact-msg"
+                            />
+                            <input
+                                type="submit" 
+                                class="newb3" 
+                            />
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="contact-image">
+                    <img src="images/Contact us-amico.png">
+                </div>
+                
+            </div>
+
+    </div>
+
+
+
+<div class="contact-phone">
+
+    <h3>Our Hot Line +94771234567</h3>
+
+</div>
+
+
+
+<div class="contact-youtube">
+    <div class="contact-youtube-text"></div>
+        <h5>YouTube</h5>
+        <a href="https://youtu.be/nJQBwYaPyBM" class="button2">Visit</a>
+
+
+
+        <iframe 
+            width="300" 
+            height="200" 
+            src="https://www.youtube.com/embed/nJQBwYaPyBM" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+</div>
+
+
+
+
+<div class="contact-facebook">
+    <div class="contact-facebook-text"></div>
+        <h5>Facebook</h5>
+        <a href="" class="button2">Visit</a>
+
+        <a href=""><img src="images/1280x1024-educational-institution_4x.jpg" width="300px"></a>
+</div>
+
+
+<div class="contact-whatsapp">
+    <div class="contact-whatsapp-text"></div>
+        <h5>WhatsApp</h5>
+        <a href="" class="button2">Visit</a>
+
+        <a href=""><img src="images/whatsapp-background.png" width="300px"></a>
+</div>
+
+    
+
+
+
+
+<footer>
+	<div class="waves"></div>
+	    <div class="wave" id="wave1"></div>
+	    <div class="wave" id="wave2"></div>
+	    <div class="wave" id="wave3"></div>
+	    <div class="wave" id="wave4"></div>
+    </div>
+
+    <div class="contact-me" id="contact">
+
+		<img src="images/1280x1024-educational-institution_4x.png" id="contact-img">
+	
+		<div class="footer-motto">
+	        <p>Academy For Higher Education.</p>
+			<div class="footer-btn">
+		    <a class="button-footer" href="login.html">login Now</a> 
+		</div>
+	</div>
+
+    <div class="footer-content">
+        <ul class="footer-social">
+			<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://api.whatsapp.com"><i class="fa fa-whatsapp"></i></a></li>
+			<li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+		</ul>
+	</div>
+
+
+	<div class="copyrights">
+        <p>copyrights &copy;2022 Institute. <br> designed by <span>Radith Yugan Wijerathna</span></p>
+	</div>	
+
+</footer>
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--Script-->
+        <script>
+    
+            const body = document.body;
+            let lastscroll = 0;
+    
+            window.addEventListener('scroll', () => {
+                const currentscroll = window.pageYOffset
+    
+                if (currentscroll <= 0) {
+                    body.classList.remove("scroll-up")
+                }
+    
+                if (currentscroll > lastscroll && !body.classList.contains("scroll-down")) {
+                    body.classList.remove("scroll-up")
+                    body.classList.add("scroll-down")
+                }
+    
+                if (currentscroll < lastscroll && body.classList.contains("scroll-down")) {
+                    body.classList.remove("scroll-down")
+                    body.classList.add("scroll-up")
+                }
+    
+                lastscroll = currentscroll;
+            })
+    
+    
+        </script>
+
+</body>
+</html>

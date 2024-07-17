@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <title>courses</title>
+     <link rel="stylesheet" href="guru2.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="icon" href="images/1280x1024-educational-institution_4x.png">
+
+</head>
+<body> 
+
+ 
+
+
+    <div class="navbar">
+		<img src="images/1280x1024-educational-institution_4x.png" class="logo">
+
+        <ul>
+            <li><a href="home.html">HOME        </a></li>
+            <li><a href="contact.html">CONTACT US  </a></li>
+        </UL>
+
+        <a class="button2" href="login.html">LOGIN</a>
+        
+    </div>
+
+
+<!--courses-->
+
+<div class="back-btn">
+	<button onclick="history.back()"><img src="images/left.png" id="left-nav"></button>
+</div>
+
+    <div class="courses2" id="courses2">
+	
+	
+	    <div class="title">
+		    <h2>Courses</h2>
+		</div>
+		<div class="box">
+		
+			<a href="advanedlevels.html">
+		    	<div class="card">
+					<img src="images/advanced.png" class="image">
+					<div class="middle">
+						<div class="text">Advanced Levels</div>
+					  </div>
+			    </div>
+		    </a>
+
+			<a href="odinarylevels.html">
+		    	<div class="card">
+					<img src="images/odinary.png" class="image">
+					<div class="middle">
+						<div class="text">Ordinary Levels</div>
+					  </div>
+			    </div>
+		    </a>
+
+			<a href="othercourses.html">
+		    	<div class="card">
+					<img src="images/low-edu2.png" class="image">
+					<div class="middle">
+						<div class="text">Other Courses</div>
+					  </div>
+			    </div>
+		    </a>
+
+		</div>
+		
+		
+		
+	</div>
+
+
+
+
+
+
+
+
+
+</div>	
+
+
+
+
+
+
+
+<footer>
+	<div class="waves"></div>
+	    <div class="wave" id="wave1"></div>
+	    <div class="wave" id="wave2"></div>
+	    <div class="wave" id="wave3"></div>
+	    <div class="wave" id="wave4"></div>
+    </div>
+
+    <div class="contact-me" id="contact">
+
+		<img src="images/1280x1024-educational-institution_4x.png" id="contact-img">
+	
+		<div class="footer-motto">
+	        <p>Academy For Higher Education.</p>
+			<div class="footer-btn">
+		    <a class="button-footer" href="login.html">Join Now</a> 
+		</div>
+	</div>
+
+    <div class="footer-content">
+        <ul class="footer-social">
+			<li><a href=""><i class="fa fa-facebook"></i></a></li>
+			<li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+			<li><a href=""><i class="fa fa-youtube"></i></a></li>
+		</ul>
+	</div>
+
+
+	<div class="copyrights">
+        <p>copyrights &copy;2022 Institute. <br> designed by <span>Radith Yugan Wijerathna</span></p>
+	</div>	
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Script-->
+	<script>
+
+		const body = document.body;
+		let lastscroll = 0;
+
+		window.addEventListener('scroll', () => {
+			const currentscroll = window.pageYOffset
+
+			if (currentscroll <= 0) {
+				body.classList.remove("scroll-up")
+			}
+
+			if (currentscroll > lastscroll && !body.classList.contains("scroll-down")) {
+				body.classList.remove("scroll-up")
+				body.classList.add("scroll-down")
+			}
+
+			if (currentscroll < lastscroll && body.classList.contains("scroll-down")) {
+				body.classList.remove("scroll-down")
+				body.classList.add("scroll-up")
+			}
+
+			lastscroll = currentscroll;
+		})
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
