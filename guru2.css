@@ -1174,8 +1174,8 @@ footer{
 
 .signup{
     position: absolute;
-	width: 500px;
-	height: 500px;
+	width: 700px;
+	height: 550px;
 	background-color: #ffffff;
 	border: 2px solid transparent;
 	border-radius: 30px;
@@ -1189,20 +1189,38 @@ footer{
 }
 
 .signup img{
-	width: 170px;
-	margin-top: 30px;
+	width: 150px;
+	margin-top: 10px;
 }
 
 
-.signup h1{
+.signup h2{
 	font-size: 30px;
 	text-align: center;
 }
 
 
+
+.email-password{
+	display: flex;
+}
+
+
+.signup #password{
+	width: 25%;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 51%;
+	padding: 10px;
+	border: 2px solid #f34010;
+	border-radius: 15px;
+}
+
 .names{
 	display: flex;
 }
+
+
 
 .signup #first-Name{
 	width: 25%;
@@ -1269,6 +1287,7 @@ footer{
 	border: 2px solid #f34010;
 	border-radius: 15px;
 }
+
 
 .signup #school{
 	width: 70%;

@@ -1,98 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <title>Sign Up</title>
-        <link rel="stylesheet" href="guru2.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="icon" href="images/1280x1024-educational-institution_4x.png" />
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="guru2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="images/1280x1024-educational-institution_4x.png" />
+    
+    <!-- Firebase SDK -->
+    <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
 
-        <div class="back-btn">
-            <button onclick="history.back()"><img src="images/left.png" id="left-nav"></button>
-        </div>
+</head>
+<body>
 
-        <div class="signup-container">
-            <div class="signup">
+    <div class="back-btn">
+        <button onclick="history.back()"><img src="images/left.png" id="left-nav"></button>
+    </div>
 
-                <div class="signup-img">
-                    <img src="images/1280x1024-educational-institution_4x.png" alt="" />
+    <div class="signup-container">
+        <div class="signup">
+
+            <div class="signup-img">
+                <img src="images/1280x1024-educational-institution_4x.png" alt="" />
+            </div>
+
+            <h2>Create A New Account</h2>
+            
+
+            <form id="signup-form">
+
+                <!-- Email and Password Fields -->
+                <div class="email-password">
+                    <input type="email" name="email" placeholder="Email" id="email" required />
+                    <input type="password" name="password" placeholder="Password" id="password" required />
                 </div>
 
-                <h1>Create A New Account</h1>
+                
+                <div class="names">
+                    <input type="text" name="firstname" placeholder="First Name" maxlength="8" id="first-Name" required />
+                    <input type="text" name="lastname" placeholder="Last Name" id="last-Name" required />
+                </div>
+                <div class="id-birthday">
+                    <input type="text" name="id-number" minlength="9" maxlength="12" placeholder="National Id Number" id="id-number" required />
+                    <input type="date" name="birthday" placeholder="birthday" id="birthday" required />
+                </div>    
+                <div class="contact">
+                    <input type="text" name="contact-number" minlength="9" maxlength="10" placeholder="Contact Number" id="contact-number" required />
+                    <select name="Gender" id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>               
+                <select name="school" id="school" required>
+                    <option value="KCC" selected>ST/Mary's College - Mathugama</option>
+                    <option value="ASM">Ananda Sasthralaya - Mathugama</option>
+                    <option value="St.marys">C.W.W. Kannangara Central College - Mathugama</option>
+                    <option value="KNV">National College - Kalutara</option>
+                    <option value="HCKalutara">Holy Cross College - Kalutara</option>
+                    <option value="HCpayagala">Holy Cross College - Payagala</option>
+                    <option value="panadurabalika">Balika College - Panadura</option>
+                    <option value="kalutarabalika">Balika College - Kalutara</option>
+                    <option value="horanathakshila">Thakshila Central College - Horana</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                
 
-                <form action="home.html">
-                    <div class="names">
-                        <input
-                            type="text"
-                            name="fistname"
-                            placeholder="First Name"
-                            maxlength="8"
-                            id="first-Name"
-                        />
-                        <input
-                            type="text"
-                            name="text"
-                            placeholder="Last Name"
-                            id="last-Name"
-                        />
-                    </div>
-                    <div class="id-birthday">
-                        <input
-                           type="text"
-                           name="id-number"
-                           minlength="9"
-                           maxlength="12"
-                           placeholder="National Id Number"
-                           id="id-number"
-                        />
-
-                        <input
-                            type="date"
-                            name="birthday"
-                            placeholder="birthday"
-                            id="birthday"
-                        />
-                    </div>    
-                    <div class="contact">
-                        <input
-                        type="text"
-                        name="contact-number"
-                        minlength="9"
-                        maxlength="10"
-                        placeholder="Contact Number"
-                        id="contact-number"
-                     />
-
-                        <select name="Gender" id="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                    </div>               
-                        <select name="school" id="school">
-                            <option value="KCC" selected>ST/Mary's College - Mathugama</option>
-                            <option value="ASM">Ananda Sasthralaya - Mathugama</option>
-                            <option value="St.marys">C.W.W. Kannangara Central College - Mathugama</option>
-                            <option value="KNV">National College - Kalutara</option>
-                            <option value="HCKalutara">Holy Cross College - Kalutara </option>
-                            <option value="HCpayagala">Holy Cross College - Payagala</option>
-                            <option value="panadurabalika">Balika College - Panadura</option>
-                            <option value="kalutarabalika">Balika College - Kalutara</option>
-                            <option value="horanathakshila">Thakshila Central College - Horana</option>
-                            <option value="other">Other</option>
-                        </select>
-
-
-                    <div class="signup-sub">
-                        <input type="submit" class="newb2" value="Create" />
-                    </div>
-                </form>
-            </div>
+                <div class="signup-sub">
+                    <input type="submit" class="newb2" value="Create" />
+                </div>
+            </form>
         </div>
-    </body>
+    </div>
+
+    <script>
+        // Firebase configuration object from Firebase Console
+        const firebaseConfig = {
+            apiKey: "AIzaSyDVye-5N7uJuE-rVJxZgiO38x3nwAbPts8",
+            authDomain: "educational-institute-764e4.firebaseapp.com",
+            projectId: "educational-institute-764e4",
+            storageBucket: "educational-institute-764e4.appspot.com",
+            messagingSenderId: "237874859946",
+            appId: "1:237874859946:web:7f64009afad2717fc1a5d3",
+            measurementId: "G-27787N6R43"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('first-Name').value;
+            const lastName = document.getElementById('last-Name').value;
+            const idNumber = document.getElementById('id-number').value;
+            const birthday = document.getElementById('birthday').value;
+            const contactNumber = document.getElementById('contact-number').value;
+            const gender = document.getElementById('gender').value;
+            const school = document.getElementById('school').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            console.log(firstName)
+
+            // Create user with email and password
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    return db.collection('users').doc(user.uid).set({
+                        firstName: firstName,
+                        lastName: lastName,
+                        idNumber: idNumber,
+                        birthday: birthday,
+                        contactNumber: contactNumber,
+                        gender: gender,
+                        school: school,
+                        email: email,
+                        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                    });
+                })
+                .then(() => {
+                    alert('User registered successfully!');
+                    window.location.href = "home.html";
+                })
+                .catch((error) => {
+                    console.error('Error during registration:', error);
+                    alert('Error: ' + error.message);
+                });
+        });
+    </script>
+</body>
 </html>
