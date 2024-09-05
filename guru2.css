@@ -1214,6 +1214,16 @@ footer{
 	padding: 10px;
 	border: 2px solid #f34010;
 	border-radius: 15px;
+	
+}
+.signup #email{
+	width: 25%;
+	position: relativ;
+	margin-top: 20px;
+	margin-left: 25%;
+	padding: 10px;
+	border: 2px solid #f34010;
+	border-radius: 15px;
 }
 
 .names{
@@ -1241,6 +1251,7 @@ footer{
 	border: 2px solid #f34010;
 	border-radius: 15px;
 }
+
 
 
 #id-birtday{
